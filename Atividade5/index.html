@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pesquisa do Filme</title>
+    <style>
+      body { font-family: Arial; margin: 20px; }
+      label { display: block; margin-top: 10px; }
+      button { margin-top: 10px; }
+      .resultado { margin-top: 20px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+
+  <h2>Pesquisa de Opinião do Filme</h2>
+  <p id="contador">Respostas registradas: 0 / 45</p>
+
+  <form id="formPesquisa">
+    <label>
+      Idade:
+      <input type="number" id="idade" required>
+    </label>
+
+    <label>
+      Sexo:
+      <select id="sexo" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outros">Outros</option>
+      </select>
+    </label>
+
+    <label>
+      Opinião:
+      <select id="opiniao" required>
+        <option value="">Selecione</option>
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+      </select>
+    </label>
+
+    <button type="submit">Adicionar Resposta</button>
+  </form>
+
+  <button onclick="calcular()">Finalizar Pesquisa</button>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
